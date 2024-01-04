@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define SIZE 10
 
 struct Node {
@@ -14,11 +15,15 @@ int hash(int key) {
 
 void insert(int data) {
     int key = hash(data);
+
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    
     newNode->data = data;
     newNode->next = NULL;
+    
     if (table[key] != NULL) {
         struct Node* temp = table[key];
+        
         while (temp->next != NULL) {
             temp = temp->next;
         }
@@ -27,12 +32,15 @@ void insert(int data) {
         table[key] = newNode;
     }
 }
+
 void search(int data) {
     int key = hash(data);
     struct Node* temp = table[key];
+
     while (temp != NULL) {
         if (temp->data == data) {
             printf("%d found in hash table.\n", data);
+            
             return;
         }
         temp = temp->next;
@@ -41,9 +49,11 @@ void search(int data) {
 }
 void delete(int data) {
     int key = hash(data);
-    struct Node* temp = table[key];
+    
+struct Node* temp = table[key];
     struct Node* prev = NULL;
-    while (temp != NULL) {
+   
+while (temp != NULL) {
         if (temp->data == data) {
             if (prev == NULL) {
                 // Node is first in chain
@@ -53,6 +63,7 @@ void delete(int data) {
             }
             free(temp);
             printf("%d deleted from hash table.\n", data);
+            
             return;
         }
         prev = temp;
@@ -62,10 +73,12 @@ void delete(int data) {
 }
 void display() {
     printf("Hash Table:\n");
+    
     for (int i = 0; i < SIZE; i++) {
         printf("%d -> ", i);
         if (table[i] != NULL) {
             struct Node* temp = table[i];
+            
             while (temp != NULL) {
                 printf("%d -> ", temp->data);
                 temp = temp->next;
@@ -74,10 +87,12 @@ void display() {
         printf("NULL\n");
     }
 }
+
 int main() {
     for (int i = 0; i < SIZE; i++) {
         table[i] = NULL;
     }
+    
     insert(10);
     insert(5);
     insert(14);
@@ -89,6 +104,7 @@ int main() {
     delete(5);
     printf("\n After deletion\n");
     display();
+    
     return 0;
 }
  
