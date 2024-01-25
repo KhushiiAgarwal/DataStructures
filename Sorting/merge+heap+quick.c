@@ -1,3 +1,6 @@
+// WAP to implement Quick sort, Merge sort and Heap Sort on 1D array of Employee
+// structure (contains employee_name, emp_no, emp_salary), with key as
+// emp_no. And count the number of swap performed.
 #include <stdio.h>
 #include <stdlib.h>
 
