@@ -1,3 +1,6 @@
+// WAP to simulate this situation. An airline is considering redesigning their ticket counters for airline passengers. They would like to have two  separate waiting lines, 
+// one for regular customers and one for frequent flyers. Assuming there is only one ticket agent available to serve all passengers, 
+// they would like to determine the average waiting time for both types of passengers using various strategies for taking passengers from the waiting lines. 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
