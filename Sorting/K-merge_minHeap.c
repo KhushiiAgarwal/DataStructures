@@ -1,4 +1,4 @@
-
+//WAP to implement K-means Merge sort using Min Heap Data Structure
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
