@@ -1,5 +1,5 @@
-// WAP to implement Quick sort on 1D array of Faculty structure (contains faculty_name, faculty_ID, subject_codes, class_names),
-// with key as faculty_ID. And count the number of swap performed
+// WAP to implement Quick Sort on 1D array of Employee structure (contains employee_name, emp_no, emp_salary), 
+// with key as emp_no. And count the number of swap performed.
 #include <stdio.h>
 int count=0;
 struct emp{
