@@ -1,3 +1,7 @@
+// WAP to simulate faculty database as a hash table. Search a particular
+// faculty by using 'divide' as a hash function for linear probing with
+// chaining without replacement method of collision handling technique.
+// Assume suitable data for faculty record.
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
