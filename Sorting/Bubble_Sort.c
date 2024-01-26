@@ -1,5 +1,5 @@
 // WAP to implement Bubble sort on 1D array of Student structure (contains student_name, student_roll_no, total_marks),
-// with key as student_roll_no. And count the number of swap performed.
+// with key as student_roll_no. And count the number of swap performed
 #include <stdio.h>
 #include <string.h>
 struct stud{
@@ -15,7 +15,7 @@ void main(){
         printf("Enter your Name, Roll No and CGPA: ");
         scanf("%s %d %f",s[i].name,&s[i].rollno,&s[i].cpi);
     }
-    printf("unSorted array: \n");
+    printf("Unsorted array: \n");
     for (i = 0; i < 3; i++) {
         printf("%s %d %f \n",s[i].name,s[i].rollno,s[i].cpi);
     }
