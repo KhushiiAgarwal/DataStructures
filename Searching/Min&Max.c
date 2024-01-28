@@ -1,3 +1,5 @@
+// WAP to simulate an application of Divide and Conquer methodology to search minimum and maximum number 
+// simultaneously from a pool of random numbers entered by the user using recursive function.
 #include <stdio.h>
 #include <limits.h>
 
